@@ -267,3 +267,16 @@ BANNER: list[str] = [
     "DDTech_image_ad4.png",
     "DDTech_image_ad5.png",
 ]
+
+
+# MAIN CONTENT ITEMS
+MAIN_ITEMS: list[list[str, str]] = [
+    ["item_example1.png", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, augue ut mattis pretium, erat tellus suscipit lorem, quis elementum libero mauris vel sapien.","$14,999.00",],
+    ["item_example2.png","Computadora PRIDE MSI MAESTRO / NVIDIA GeForce RTX 4090 / INTEL CORE I9-14900K / 64GB RAM / 2TB SSD / 1000W 80+ GOLD / INCLUYE WIFI / Gorra de Regalo!","$79,999.00"],
+    ["item_example3.png","Tarjeta de Video Asus Dual Radeon RX 6600 V2 / AMD Radeon RX6600 / PCIe 4.0 / 1 HDMI 2.1 / 3 Puertos DisplayPort 1.4a / DUAL-RX6600-8G-V2","$4,299.00"],
+    ["item_example4.png","Monitor Curvo LG 39GS95QE Ultragear OLED / 39 pulgadas / WQHD / 800R / 240Hz / 0.03ms / DisplayHDR / True Black 400 / AMD FreeSync Premium Pro / NVIDIA G-Sync / HDMI 2.1 / DisplayPort / 39GS95QE-B","$14,999.00"],
+    ["item_example5.png","Fuente NZXT C750 Bronze / 750W / 80+ Bronze / PFC Ativo / Black / PA-7B2BB-US/","$999.00"],
+    ["item_example6.png","Computadora PRIDE GAMING PBA WHITE WOLF LUFT / NVIDIA GeForce RTX 4060 / AMD Ryzen 5 5500 / 32GB RAM / 1TB SSD / 650W 80+ BRONZE / INCLUYE WIFI","$14,999.00"],
+    ["item_example7.png","Monitor Gamer MSI G274F LED 27 / Full HD / G-Sync / 180Hz / Rapid IPS / HDMI / Negro / G274F","$2,999.00"],
+    ["item_example8.png","Sistema de Enfriamiento Liquido HYTE THICC Q60 / 240mm / 0-3000RPM / FAN-HYTE-Q60-BW/","$4,899.00"]
+]

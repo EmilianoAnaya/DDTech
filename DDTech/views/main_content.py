@@ -1,7 +1,8 @@
 import reflex as rx
 from DDTech.components.image_slider import image_slider
 from DDTech.components.heading_main import heading_main
-from DDTech.components.item_slot import item_slot
+from DDTech.components.desktop_item_slot import desktop_item_slot
+from DDTech.constants import MAIN_ITEMS
 
 def main_content() -> rx.Component:
     return rx.box(
@@ -11,25 +12,7 @@ def main_content() -> rx.Component:
             rx.separator(size="4",orientation="horizontal",color_scheme="yellow"),
             rx.desktop_only(
                 rx.flex(
-                    rx.box(
-                        item_slot(),
-                        width="22%",
-                    ),
-                    rx.box(
-                        item_slot(),
-                        width="22%",
-                        background_color="blue",
-                    ),
-                    rx.box(
-                        "Hola",
-                        width="22%",
-                        background_color="blue",
-                    ),
-                    rx.box(
-                        "Hola",
-                        width="22%",
-                        background_color="blue",
-                    ),
+                    *[desktop_item_slot(item_info, i) for i,item_info in enumerate(MAIN_ITEMS)],
                     width="100%",
                     flex_wrap="wrap",
                     direction="row",

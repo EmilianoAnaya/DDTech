@@ -2,9 +2,9 @@ import reflex as rx
 from DDTech.styles.styles import Sizes
 from DDTech.styles.colors import TextColors
 
-def item_price_tag()->rx.Component:
+def item_price_tag(price:str)->rx.Component:
     return rx.vstack(
-        rx.text("$14,999.00",color=TextColors.HOVER_CATEGORY_TEXT.value,weight="bold"),
+        rx.text(price,color=TextColors.HOVER_CATEGORY_TEXT.value,weight="bold"),
         rx.hstack(
             rx.icon(tag="check",size=15,color="white"),
             rx.text("CON EXISTENCIA",font_size=Sizes.MEDIUM.value,color="white"),
