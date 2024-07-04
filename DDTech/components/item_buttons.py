@@ -2,9 +2,8 @@ import reflex as rx
 from DDTech.styles.styles import Sizes
 from DDTech.constants import CART_ICON, SQUARE_PLUS
 from DDTech.styles.colors import ItemButtons as color
-from DDTech.backend.state_item_slot import State_ItemSlot as State
 
-def item_buttons(index:int) -> rx.Component:
+def item_buttons(cls) -> rx.Component:
     return rx.flex(
         rx.hstack(
             rx.icon(tag=CART_ICON,
@@ -67,6 +66,6 @@ def item_buttons(index:int) -> rx.Component:
         direction="row",
         width="100%",
         wrap="wrap",
-        opacity = State.button_opacity[index],
+        opacity = cls.button_opacity,
         transition = "opacity 0.3s ease",
     ),
