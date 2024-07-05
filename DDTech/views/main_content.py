@@ -1,8 +1,10 @@
 import reflex as rx
 from DDTech.components.image_slider import image_slider
-from DDTech.components.slider_item_selector import slider_item_selector
+from DDTech.components.header_slider import header_slider
 from DDTech.components.box_item_slot import box_item_slot
-from DDTech.constants import MAIN_ITEMS
+from DDTech.components.box_brand_slot import box_brand_slot
+from DDTech.backend.state_item_slider import Item_Slider
+from DDTech.constants import MAIN_ITEMS,BRANDS_IMAGES
 
 def main_content() -> rx.Component:
     return rx.box(
@@ -20,14 +22,20 @@ def main_content() -> rx.Component:
                 ),
                 width="100%",
             ),
-            slider_item_selector("Últimos Productos"),
-            rx.stack(
-                *[box_item_slot("200px",MAIN_ITEMS[i]) for i in range(0,8)],
+            header_slider("Últimos Productos",0),
+            rx.hstack(
+                *[box_item_slot("200px",item_info) for item_info in MAIN_ITEMS],
                 spacing="3",
-                direction="row",
-                margin_left="0px",
+                margin_left=f"{Item_Slider.margin_left[0]}px",
+                transition = "margin-left 0.5s ease"
             ),
-            slider_item_selector("Las Mejores Marcas"),
+            header_slider("Las Mejores Marcas",1),
+            rx.hstack(
+                *[box_brand_slot("200px",item_info) for item_info in BRANDS_IMAGES],
+                spacing="3",
+                margin_left=f"{Item_Slider.margin_left[1]}px",
+                transition = "margin-left 0.5s ease"
+            ),
             visibility="visible",
         ),
         width="100%",

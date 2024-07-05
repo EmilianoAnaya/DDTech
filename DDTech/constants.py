@@ -280,3 +280,14 @@ MAIN_ITEMS: list[list[str, str]] = [
     ["item_example7.png","Monitor Gamer MSI G274F LED 27 / Full HD / G-Sync / 180Hz / Rapid IPS / HDMI / Negro / G274F","$2,999.00"],
     ["item_example8.png","Sistema de Enfriamiento Liquido HYTE THICC Q60 / 240mm / 0-3000RPM / FAN-HYTE-Q60-BW/","$4,899.00"]
 ]
+
+
+BRANDS_IMAGES: list[str] = [
+    "Intel.png",
+    "Munfrost.png",
+    "XPG.png",
+    "ASUS.png",
+    "Fury.png",
+    "Aorus.png",
+    "AMD.png" 
+]
