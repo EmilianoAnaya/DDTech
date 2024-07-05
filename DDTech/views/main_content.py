@@ -1,6 +1,6 @@
 import reflex as rx
 from DDTech.components.image_slider import image_slider
-from DDTech.components.heading_main import heading_main
+from DDTech.components.slider_item_selector import slider_item_selector
 from DDTech.components.box_item_slot import box_item_slot
 from DDTech.constants import MAIN_ITEMS
 
@@ -20,9 +20,16 @@ def main_content() -> rx.Component:
                 ),
                 width="100%",
             ),
-            heading_main("Últimos Productos"),
-            heading_main("Las Mejores Marcas"),
+            slider_item_selector("Últimos Productos"),
+            rx.stack(
+                *[box_item_slot("200px",MAIN_ITEMS[i]) for i in range(0,8)],
+                spacing="3",
+                direction="row",
+                margin_left="0px",
+            ),
+            slider_item_selector("Las Mejores Marcas"),
             visibility="visible",
         ),
         width="100%",
+        overflow="hidden",
     )
