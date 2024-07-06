@@ -1,9 +1,9 @@
 import reflex as rx
+from DDTech.views.bottom_links import bottom_link
 from DDTech.views.header import header
 from DDTech.views.menu import menu
 from DDTech.styles.styles import BASE_STYLE
 from DDTech.styles.styles import Sizes
-from DDTech.backend.state_image_slider import State_ImageSlider
 
 
 class Status(rx.State):
@@ -17,6 +17,7 @@ def index() -> rx.Component:
             width="100%",
             margin_top=Sizes.BIG.value
         ),
+        bottom_link(),
     )
 
 

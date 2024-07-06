@@ -281,7 +281,7 @@ MAIN_ITEMS: list[list[str, str]] = [
     ["item_example8.png","Sistema de Enfriamiento Liquido HYTE THICC Q60 / 240mm / 0-3000RPM / FAN-HYTE-Q60-BW/","$4,899.00"]
 ]
 
-
+# BRAND IMAGES
 BRANDS_IMAGES: list[str] = [
     "Intel.png",
     "Munfrost.png",
@@ -291,3 +291,9 @@ BRANDS_IMAGES: list[str] = [
     "Aorus.png",
     "AMD.png" 
 ]
+
+# BOTTOM_LINKS_IMAGES
+class BOTTOM_LINKS_IMAGES(Enum):
+    REPAIR = "Motherboard_Repair.jpg"
+    PRIDE = "Pride_DDTech.jpeg"
+    TWITCH = "Twitch_DDTech.png"

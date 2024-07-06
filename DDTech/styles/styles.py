@@ -41,6 +41,15 @@ BASE_STYLE = {
     "background_color" : BackgroundColors.BODY.value
 }
 
+BTN_SLIDER_HEADER = {
+    "cursor" : "pointer",
+    "background_color" : "#dddddd",
+    "transition" : "background-color 0.5s ease",
+    "_hover" : {
+        "background_color" : "#1368f1", 
+    }
+}
+
 BTN_SLIDER_STYLE= {
     "width" : "auto",
     "cursor" : "pointer",

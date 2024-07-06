@@ -14,8 +14,7 @@ def menu() -> rx.Component:
                 rx.vstack(
                     main_content(),
                     width="75%",
-                )
-                
+                ),
             ),
         ),
         rx.mobile_and_tablet(

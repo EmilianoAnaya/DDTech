@@ -23,18 +23,22 @@ def main_content() -> rx.Component:
                 width="100%",
             ),
             header_slider("Últimos Productos",0),
-            rx.hstack(
-                *[box_item_slot("200px",item_info) for item_info in MAIN_ITEMS],
-                spacing="3",
-                margin_left=f"{Item_Slider.margin_left[0]}px",
-                transition = "margin-left 0.5s ease"
+            rx.desktop_only(
+                rx.hstack(
+                    *[box_item_slot("200px",item_info) for item_info in MAIN_ITEMS],
+                    spacing="3",
+                    margin_left=f"{Item_Slider.margin_left[0]}px",
+                    transition = "margin-left 0.5s ease"
+                ),
             ),
             header_slider("Las Mejores Marcas",1),
-            rx.hstack(
-                *[box_brand_slot("200px",item_info) for item_info in BRANDS_IMAGES],
-                spacing="3",
-                margin_left=f"{Item_Slider.margin_left[1]}px",
-                transition = "margin-left 0.5s ease"
+            rx.desktop_only(
+                rx.hstack(
+                    *[box_brand_slot("200px",item_info) for item_info in BRANDS_IMAGES],
+                    spacing="3",
+                    margin_left=f"{Item_Slider.margin_left[1]}px",
+                    transition = "margin-left 0.5s ease"
+                ),
             ),
             visibility="visible",
         ),
