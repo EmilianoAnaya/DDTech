@@ -18,6 +18,8 @@ HELP_ICON = "circle-help"
 HOME_ICON = "home"
 CART_ICON = "shopping-cart"
 SQUARE_PLUS = "square-plus"
+MAP_PIN  ="map-pin"
+BUILDIN_ICON = "building"
 
 # MENU_SLIDER_ICONS
 ARROW_LEFT = "arrow-left"
@@ -28,6 +30,7 @@ PAYMENTS_LOGOS = "logos-pagos.png"
 
 # APP_LOGO
 DDTECH_LOGO = "ddtech.png"
+DDTECH_FOOTER_LOGO = "logo-footer.png"
 
 # CATEGORIES_RESOURCES
 class CategoriesIcons(Enum):    
@@ -306,4 +309,21 @@ ITEMS_BOTTOM_LINKS: list[str,str,str,str,str] = [
     [BOTTOM_LINKS_IMAGES.REPAIR.value,"Configurador","¿Buscas la computadora ideal para ti?, Encuentra tu computadora perfecta respondiendo estas simples preguntas. Tendrás lo que necesitas al instante.","IR AL SITIO","auto"],
     [BOTTOM_LINKS_IMAGES.PRIDE.value,"Pride","Todo lo que necesitas para llevar tus partidas al siguiente nivel con Pride. Siente el orgullo Gamer y llena tus partidas de poder con el equipo de Pride.","IR AL SITIO","auto"],
     [BOTTOM_LINKS_IMAGES.TWITCH.value,"Gracias por seguirnos en Twitch","Son una comunidad increible","VER NOTICIA","pointer"]
+]
+
+
+# FOOTER
+DDTECH_INFO : list[list[str,str]] = [
+    [MAP_PIN, """Suc. Jardines
+                Av Niños Heroes 2749
+                Col. Jardines del Bosque
+                CP. 44520
+                Guadalajara, Jalisco, México"""],
+    [BUILDIN_ICON, """Oficinas (No se atienden clientes en esta ubicación)
+                        Calle De las rosas 100
+                        Col. Santa Maria Tequepexpan
+                        CP. 45601
+                        San Pedro Tlaquepaque, Jalisco, México"""],
+    [PHONE_ICON, "(33) 28 77 04 35"],
+    [GMAIL_ICON, "ventas@ddtech.mx"],                        
 ]

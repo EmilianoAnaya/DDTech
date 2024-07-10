@@ -34,6 +34,7 @@ def bottom_box_link(Box_details:list[str,str,str,str], Width:str)->rx.Component:
                 color="white",
                 text_shadow= "1px 1px 2px black",
                 cursor="pointer",
+                margin_bottom=Sizes.DEFAULT.value
             ),
             padding_x=Sizes.DEFAULT.value,
             position="absolute",
