@@ -23,6 +23,9 @@ SQUARE_PLUS = "square-plus"
 ARROW_LEFT = "arrow-left"
 ARROW_RIGHT = "arrow-right"
 
+# FOOTER
+PAYMENTS_LOGOS = "logos-pagos.png"
+
 # APP_LOGO
 DDTECH_LOGO = "ddtech.png"
 

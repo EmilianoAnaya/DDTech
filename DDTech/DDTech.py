@@ -2,6 +2,7 @@ import reflex as rx
 from DDTech.views.bottom_links import bottom_links
 from DDTech.views.header import header
 from DDTech.views.menu import menu
+from DDTech.views.footer import footer
 from DDTech.styles.styles import BASE_STYLE
 from DDTech.styles.styles import Sizes
 
@@ -18,6 +19,7 @@ def index() -> rx.Component:
             margin_top=Sizes.BIG.value
         ),
         bottom_links(),
+        footer(),
     )
 
 
