@@ -297,3 +297,10 @@ class BOTTOM_LINKS_IMAGES(Enum):
     REPAIR = "Motherboard_Repair.jpg"
     PRIDE = "Pride_DDTech.jpeg"
     TWITCH = "Twitch_DDTech.png"
+
+
+ITEMS_BOTTOM_LINKS: list[str,str,str,str,str] = [
+    [BOTTOM_LINKS_IMAGES.REPAIR.value,"Configurador","¿Buscas la computadora ideal para ti?, Encuentra tu computadora perfecta respondiendo estas simples preguntas. Tendrás lo que necesitas al instante.","IR AL SITIO","auto"],
+    [BOTTOM_LINKS_IMAGES.PRIDE.value,"Pride","Todo lo que necesitas para llevar tus partidas al siguiente nivel con Pride. Siente el orgullo Gamer y llena tus partidas de poder con el equipo de Pride.","IR AL SITIO","auto"],
+    [BOTTOM_LINKS_IMAGES.TWITCH.value,"Gracias por seguirnos en Twitch","Son una comunidad increible","VER NOTICIA","pointer"]
+]
